@@ -1,7 +1,3 @@
-DON'T EVER automatically commit to the repo. Don't commit or push without
-explicit user instruction. Always ask for confirmation before making any changes
-to the repository.
-
 Before starting a session make sure the repo is clean with git status. If there
 are uncommitted changes, ask the user if they want to commit or stash them
 before proceeding.
