@@ -13,3 +13,6 @@ roadmap items into detailed, actionable tasks.
 - Point out any dependencies between tasks.
 - Write a sentence or two about the achieved outcome of each task and how it
   aligns with the goals to help the user understand the value of completing it.
+- Don't try to execute any tasks, your job is to flesh them out and make them
+  actionable, not to do the work yourself. Write the plan and let the user
+  execute it with the build agent.
