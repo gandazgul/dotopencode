@@ -2,8 +2,15 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     "/Users/gandazgul/Documents/web/mnemosyne/opencode-mnemosyne",
-    "@mohak34/opencode-notifier@latest"
+    // "opencode-mnemosyne",
+    "/Users/gandazgul/Documents/web/open-beacon-plugin-onnx",
+    // "open-beacon-plugin", // but my changes havent been merged yet
+    "@mohak34/opencode-notifier"
   ],
+  "tools": {
+    "websearch": true,
+    "codesearch": true
+  },
   "mcp": {
     "context7": {
       "type": "local",

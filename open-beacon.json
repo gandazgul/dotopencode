@@ -1,0 +1,9 @@
+{
+  "embedding": {
+    "provider": "local",
+    "model": "nomic-ai/nomic-embed-text-v1.5",
+    "dimensions": 768,
+    "quantized": true,
+    "query_prefix": ""
+  }
+}
