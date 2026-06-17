@@ -30,19 +30,20 @@ implementations.
 - When you are done with a task store any memories that you think are relevant
   to the user and the project.
 
-## Code Search
+## Code Search (cymbal)
 
-Use Vera before opening many files or running broad text search when you need to
-find where logic lives or how a feature works.
+Use `code_search` / `code_show` (cymbal) before opening files or running broad
+text grep to find where logic lives or how a feature works.
 
-- `vera search "query"` for semantic code search. Describe behavior: "JWT
-  validation", not "auth".
-- `vera grep "pattern"` for exact text or regex
-- `vera references <symbol>` for callers and callees
-- `vera overview` for a project summary (languages, entry points, hotspots)
-- `vera search --deep "query"` to follow symbols across multiple hops
-- Narrow results with `--lang`, `--path`, `--type`, or `--scope docs`
-- `vera watch .` to auto-update the index, or `vera update .` after edits
-  (`vera index .` if `.vera/` is missing)
-- For detailed usage, query patterns, and troubleshooting, read the Vera skill
-  file
+- `code_search "symbol"` to find a function, class, or type across the codebase
+- `code_search --textSearch` for full-text regex grep (fallback for textual
+  patterns)
+- `code_show <symbol>` to read the exact source of a specific symbol
+- `code_outline <file>` to see all symbols defined in a file at a glance
+- `code_refs <symbol>` to find all callers and references to a symbol
+- `code_impact <symbol>` to measure transitive blast radius before modifying
+- `code_trace <symbol>` to explore caller/callee graphs visually
+- `code_investigate <symbol>` for an in-depth breakdown of complex symbols
+- `code_structure` for a project overview (entry points, hotspots, packages)
+- `code_impls <symbol>` to find types that implement a given interface
+- `code_importers <file>` to find everything that imports a file or package

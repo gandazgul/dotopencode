@@ -2,6 +2,8 @@
 
 This repository contains the personalized configuration and custom extensions for the [Opencode](https://opencode.ai) AI development environment. It defines custom agents, commands, skills, and behavior rules to tailor the AI's capabilities for automated development, QA testing, and project planning.
 
+> **Like this setup?** Check out [**Harns**](https://github.com/gandazgul/harns) — the coding harness I built after months of testing every agent harness and model out there. It ties together the routing, memory, and execution patterns you see here into a reusable system.
+
 ## Directory Structure
 
 ```text
@@ -69,3 +71,7 @@ If you are cloning this configuration to a new machine:
 - **Invoking Agents**: Mention `@docs-writer` or `@playwright-tester` in your prompt to delegate tasks specifically to them.
 - **Memory Context**: The system will automatically recall relevant global memories at the start of a session. You can explicitly ask the AI to "remember this" to store custom preferences.
 - **Git Workflow**: Since automated commits are blocked by default, the AI will stage files and present a `git status` summary. You must manually execute or approve the final commit.
+
+## License
+
+[MIT](LICENSE) — feel free to use, adapt, and share.
